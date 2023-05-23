@@ -1,15 +1,14 @@
 let input = '5';
-
 let entrada = parseFloat(input);
-
 let indice = 0;
-
-let valor = 0;
-let soma = '';
-let sequencia = '';
+let digito_1 = 0;
+let digito_2 = 1;
 
 while (indice < entrada) {
-  soma = valor + (valor + 1);
-  console.log(soma);
+  let resultado = digito_1 + digito_2;
+  digito_1 = digito_2;
+  digito_2 = resultado;
   indice = indice + 1;
 }
+
+console.log(resultado);
